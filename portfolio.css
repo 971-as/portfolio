@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(21,21,21);
+}
+/*navbar section */
+
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: larger;
+    overflow: hidden;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav_head{
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+li{
+    display: flex;
+    float: inline-start;
+    overflow: hidden;
+}
+
+li a{
+    padding: 15px;
+    display: block;
+    color: white;
+}
+
+li a hover{
+    color: #be22ed;
+}
+
+.contact_btn{
+    padding: 10px 30px;
+    color: black;margin-left: 8rem;
+    background-color: rgba(253, 8, 8, 0.912);
+    border-radius: 30px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.contact_btn:hover{
+    color: white;
+    border: 2px solid rgba(253, 8, 8, 0.912);
+    background: transparent;
+}
+
+.checkbtn{
+    display: none;
+
+}
+
+@media  screen and (max-width:952px) {
+    .checkbtn{
+        display: block;
+        margin-left: 150px;
+    }
+    .nav_head{
+        padding-left: 0ch10px;
+    }
+    nav ul{
+        z-index: 1000;
+        position: fixed;
+        width: 60%;
+        height: 50vh;
+        background-color: black;
+        top: 50px; right: -100%;
+        padding: 20px;
+        transition: all .5s;
+    }
+    nav ,.contact_btn{
+        width: 20px;
+    }
+    nav li a{
+        font-size: 20px;
+        color: white;
+    }
+    .checkbox:checked ~ ul{
+        right: 0;
+    }
+}
+/* home section */
+
+.home{
+    padding: 220px 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+    margin: 0;
+}
+.descripition{
+    padding-top: 10px;
+    margin: 0;
+    padding: 0;
+}
+.descripition h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.descripition h1 span{
+    color: rgba(253, 8, 8, 0.912);
+    font-size: 55px;
+}
+.descripition h2{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.descripition h2 span{
+    color: rgba(253, 8, 8, 0.912);
+    position: relative;
+}
+.descripition h2 span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0px;
+    height: 100px;
+    border-left: 4px solid rgba(253, 8, 8, 0.912);
+    background-color: rgb(21,21,21);
+}
+@keyframes text{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 100%;
+    }
+}
+.descripition p{
+    width: 500px;
+    margin-top: 20px;
+}
+.font i{
+    margin: 25px 8px;
+    border: 2px solid rgba(253, 8, 8, 0.912);
+    border-radius: 50px;
+    padding: 13px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.font i:hover{
+    background-color: rgba(253, 8, 8, 0.912);
+    transform: translateY(-15px);
+    box-shadow: 0px 0px 15px rgba(253, 8, 8, 0.912);
+}
+.descripition button{
+    padding: 0;
+    font-size: 20px;
+    border-radius: 10px;
+    background: linear-gradientrgb(231,201,31));
+    cursor: pointer;
+    border: none;
+}
+.home img{
+    background-color: rgba(253, 8, 8, 0.912);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px rgba(253, 8, 8, 0.912);
+    filter: brightness(1.1);
+    transition: .4s ease-in-out;
+    animation: animate 2.5s ease-in-out forwards infinite;
+}
+.home img:hover{
+    box-shadow: 0px 0px 50px rgba(253, 8, 8, 0.912);
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-15px);
+    }
+    100%{
+        transform: translatey(0px)
+    }
+}
+.about_section{
+    margin-bottom: 0px;
+    padding: 0;
+    margin: 0;
+}
+.about_section h1{
+    font-size: 30px;
+}
+.about_section h2{
+    margin-top: 10px;
+}
+.about_section span{
+    color: rgba(253, 8, 8, 0.912);
+}
+.about_section p{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+section{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color: rgba(253, 8, 8, 0.912);
+}
+.contact_section{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.contact_section h1{
+    font-size: 30px;
+}
+.contact_section h2{
+    margin-top: 10px;
+}
+.contact_section span{
+    color: rgba(253, 8, 8, 0.912);
+}
+.contact_section p{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
